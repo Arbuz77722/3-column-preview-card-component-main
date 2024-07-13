@@ -1,0 +1,134 @@
+:root {
+  /* Colors */
+
+  /* Primary */
+  --primary-bright-orange: hsl(31, 77%, 52%);
+  --primary-dark-cyan: hsl(184, 100%, 22%);
+  --primary-very-dark-cyan: hsl(179, 100%, 13%);
+  /* Neutral */
+  --neutral-transparent-white-p: hsla(0, 0%, 100%, 0.75);
+  --neutral-very-light-gray-bhb: hsl(0, 0%, 95%);
+
+  /* Typography */
+  --ff-ld: "Lexend Deca", sans-serif;
+  --ff-bsd: "Big Shoulders Display", sans-serif;
+  --fs-p: 15px;
+  --fw-ld-normal: 400;
+  --fw-bsd-bold: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100svh;
+  font-family: var(--ff-ld);
+  font-weight: var(--fw-ld-normal);
+  font-size: var(--fs-p);
+}
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  overflow: hidden;
+  margin: 0.2rem;
+}
+
+.model {
+  padding: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.sedan {
+  background-color: var(--primary-bright-orange);
+}
+.suv {
+  background-color: var(--primary-dark-cyan);
+}
+.luxury {
+  background-color: var(--primary-very-dark-cyan);
+}
+
+.car-icon {
+  margin-top: 0.5rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.car-title {
+  text-transform: uppercase;
+  color: var(--neutral-very-light-gray-bhb);
+  font-family: var(--ff-bsd), cursive;
+}
+.car-content {
+  font-family: var(--ff-ld);
+  font-size: var(--fs-p);
+  color: var(--neutral-transparent-white-p);
+  line-height: 1.6;
+}
+.links:link,
+.links:visited {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 2.6rem;
+  width: 70%;
+  padding: 1.2rem 2rem;
+  background-color: var(--neutral-very-light-gray-bhb);
+  margin-top: 5rem;
+  transition: all 0.4s ease-in-out;
+}
+.links:hover,
+.links:active {
+  box-shadow: 0 0 0 2px white;
+  background-color: transparent;
+  color: var(--neutral-very-light-gray-bhb);
+}
+
+.sedan-color {
+  color: var(--primary-bright-orange);
+}
+.suv-color {
+  color: var(--primary-dark-cya);
+}
+.luxury-color {
+  color: var(--primary-very-dark-cyan);
+}
