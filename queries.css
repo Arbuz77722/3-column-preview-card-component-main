@@ -2,9 +2,12 @@
   html {
     font-size: 60%;
   }
+  body{
+    height: auto;
+  }
+  
   .container {
     padding: 1rem;
-    height: auto;
   }
   .grid-3-cols {
     grid-template-columns: 1fr;
