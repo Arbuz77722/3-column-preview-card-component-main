@@ -4,6 +4,7 @@
   }
   .container {
     padding: 2rem;
+    height: 100svh;
   }
   .grid-3-cols {
     grid-template-columns: 1fr;
